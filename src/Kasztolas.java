@@ -7,7 +7,7 @@ public class Kasztolas {
         double d = 19.99d;
         char myGrade = 'B';
         boolean mybool = true;
-        String greeting = "Hello World";
+        String greeting = "Hello World!";
 
 
         System.out.println(mybyte);
@@ -18,6 +18,8 @@ public class Kasztolas {
         System.out.println(myGrade);
         System.out.println(mybool);
         System.out.println(greeting);
+        System.out.println("------------------------------------");
+
 
         double kasztproba = 19.23d;
         float dtof = (float) kasztproba;
