@@ -6,17 +6,17 @@ public class Operatorok {
         System.out.println("Adjon meg egy stringet!");
         String szoveg = sc.nextLine();
         System.out.println("Adjon meg 1 karakter!");
-        String karakter1 = sc.nextLine();
+        char karakter1 = sc.nextLine().charAt(0);
         System.out.println("Adjon meg még1 karakter!");
-        String karakter2 = sc.nextLine();
+        char karakter2 = sc.nextLine().charAt(0);
         System.out.println("Adjon meg 1 integert!");
-        int int1 = Integer.parseInt(sc.nextLine());
+        int int1 = sc.nextInt();
         System.out.println("Adjon meg még1 integert!");
-        int int2 = Integer.parseInt(sc.nextLine());
+        int int2 = sc.nextInt();
         System.out.println("Adjon meg 1 double-t!");
-        double double1 = Double.parseDouble(sc.nextLine());
+        double double1 = sc.nextDouble();
         System.out.println("Adjon meg még1 double-t!");
-        double double2 = Double.parseDouble(sc.nextLine());
+        double double2 = sc.nextDouble();
 
         String osszerak = szoveg + karakter1 + karakter2;
         double oszt = (double) int1 / int2;
