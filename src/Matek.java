@@ -29,5 +29,6 @@ public class Matek {
         //7.
         System.out.println("A két szám hányadosának legközelebbi egészre kerekítése: " + Math.ceil(rnd1/rnd2));
 
+
     }
 }
