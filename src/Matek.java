@@ -4,7 +4,7 @@ public class Matek {
         double rnd2 = Math.round(Math.random()*200);
 
         // 1.
-        System.out.println( rnd1 > rnd2 ? "Első szám nagyobb "+rnd1+">"+rnd2 : "Második szám nagyobb!"+rnd1+"<"+rnd2);
+        System.out.println( rnd1 > rnd2 ? "Első szám nagyobb! "+rnd1+">"+rnd2 : "Második szám nagyobb!"+rnd1+"<"+rnd2);
 
         //2.
         System.out.println( rnd1 < rnd2 ? "Első a kisebb "+rnd1+"<"+rnd2 : "Második szám a kisebb!"+rnd1+">"+rnd2);
