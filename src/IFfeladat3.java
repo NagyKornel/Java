@@ -16,9 +16,9 @@ public class IFfeladat3 {
         else if(szam2>szam1 && szam3> szam2) System.out.println("A második szám a középső!");
         else if(szam3>szam1 && szam2> szam3) System.out.println("A harmadik szám a középső!");
 
-        if(szam1>szam2 && szam1> szam3) System.out.println("Az első szám a legkisebb!");
-        else if(szam2> szam1 && szam2> szam3) System.out.println("A második szám a legkisebb!");
-        else if(szam3> szam2 && szam3> szam1) System.out.println("A harmadik szám a legkisebb!");
+        if(szam1<szam2 && szam1 < szam3) System.out.println("Az első szám a legkisebb!");
+        else if(szam2 < szam1 && szam2 < szam3) System.out.println("A második szám a legkisebb!");
+        else if(szam3 < szam2 && szam3 < szam1) System.out.println("A harmadik szám a legkisebb!");
 
     }
 }
