@@ -1,25 +1,27 @@
 import java.util.Scanner;
 
 public class Matrix {
-    static void main(){
+    static void main() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Kérem az oszlopok számát!");
-        int oszlop = sc.nextInt();
-        System.out.println("Kérem az sorok számát!");
-        int sor = sc.nextInt();
-        int [][] matrix = new int [oszlop][sor];
+        IO.print("Oszlop: ");
+        int col = sc.nextInt();
+        IO.print("Sor: ");
+        int row = sc.nextInt();
+        int [][] matrix = new int [col][row];
 
-        System.out.println("Kérem az első oszlop tartalmát!");
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
+                IO.print("Adat: ");
                 matrix[i][j] = sc.nextInt();
             }
         }
+
         for (int i = 0; i < matrix.length; i++) {
+            IO.print(" | ");
             for (int j = 0; j < matrix[i].length; j++) {
-                System.out.print(matrix[i][j] + " ");
+                IO.print(matrix[i][j] + " | ");
             }
-            System.out.println();
+            IO.print("\n");
         }
     }
 }
