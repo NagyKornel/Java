@@ -6,10 +6,10 @@ public class PartyArrasAndDividable {
 
     public static String partyValidation(int boy, int girl) {
         if (boy == girl && boy + girl >= 20) return "The party is excellent!";
-        else if (boy + girl >= 20 && boy > girl || girl > boy) return "Quite a cool party!";
-        else if (girl == 0) return "Sausage party";
-        else return  "Average party...";
-
+        else if (boy == 0) return "Sausage party";
+        else if (boy + girl >= 20 && boy != girl) return "Quite a cool party!";
+        else if( boy+girl < 20) return  "Average party...";
+        else return "baj van";
     }
 
     public static int[] add(int[] arr, int num) {
@@ -27,16 +27,19 @@ public class PartyArrasAndDividable {
     }
 
     public static int[] insert(int[] arr, int index, int num) {
-        int ind = 0;
         int[] result = new int[arr.length + 1];
-        for (int i = 0; i < arr.length; i ++) {
+        for (int i = 0; i < arr.length; i++) {
+
             if (i == index) {
-                result[ind] = num;
-                ind++;
+                result[i] = num;
             }
-            result[ind] = arr[i];
-            ind++;
+            else if (i == index){result[i] = num;}
+            else{}
         }
+        if (index >= arr.length){
+            result[arr.length] = num;
+        }
+        else{result[arr.length] = arr[arr.length - 1];}
         return result;
     }
 
