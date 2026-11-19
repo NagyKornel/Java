@@ -57,8 +57,8 @@ public class MasodfokuHiba{
     System.out.println("Program lefutott");
     }
 
-    public static double masodfokuMegoldasokSzama(double a, double b, double c) throws IllegalArgumentException {
-   
+    public static double masodfokuMegoldasokSzama(double a, double b, double c) throws IllegalArgumentException 
+    {
             if (a == 0) throw new IllegalArgumentException("Nem másodfokú egyenlet");
              double d = Math.pow(b, 2) - 4 * a * c;
             if (d > 0) return 2;
